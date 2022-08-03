@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 50px;
 }
 
 
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   display: inline-block;
   background: #fff;
-  color: #3498db;
+  color: #418AD9;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -97,10 +97,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #3498db;
+  border: 1px solid #418AD9;
 }
 .contact .social-links a:hover {
-  background: #3498db;
+  background: #418AD9;
   color: #fff;
 }
 .contact .info {
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .contact .info i {
   font-size: 32px;
-  color: #3498db;
+  color: #418AD9;
   float: left;
   line-height: 1;
 }
@@ -146,8 +146,8 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   display: inline-block;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  /*width: 24px;*/
+  /*height: 24px;*/
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
   border-top-color: #eee;
@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 15px;
 }
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #3498db;
+  border-color: #418AD9;
 }
 .contact .php-email-form label {
   display: block;
@@ -190,15 +190,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 .contact .php-email-form button[type=submit] {
-  background: #3498db;
+  background: #fff;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  border: 2px solid #418AD9;
+  color: #418AD9;
   transition: 0.4s;
   border-radius: 50px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #2383c4;
+  background: #0C42FF;
+  border: 2px solid #0C42FF;
+  color: #fff;
+  
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -253,18 +257,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #3498db;
+  color: #0C42FF;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
   background: #FF8F06;
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 50px;
-  color: #F6F9FC;
+  color: #fff;
 }
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
   color: #FF8F06;
-  background: #F6F9FC;
+  background: #fff;
   border: 1px solid #FF8F06;
   border-radius: 30px;
 }
@@ -294,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #3498db;
+  color: #0C42FF;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -380,7 +384,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #222222;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #3498db;
+  color: #0C42FF;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -406,7 +410,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #3498db;
+  color: #0C42FF;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -443,7 +447,7 @@ section {
   content: "";
   width: 50px;
   height: 2px;
-  background: #F6F9FC;
+  background: #fff;
   display: inline-block;
 }
 /*.section-title h2::before {
@@ -509,11 +513,26 @@ section {
   }
 }
 
+.flex{
+  display: flex;
+}
+
+.flex-jc-sb{
+  justify-content: space-between;
+}
+
+.flex-jc-center{
+  justify-content: center;
+}
+
+.flex-ai-c{
+  align-items: center;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
+  /*background: ;*/
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 30px 0;
   color: #222222;
@@ -532,5 +551,11 @@ section {
   padding-left: 0;
 }
 #footer .footer-links a:hover {
-  color: #3498db;
+  color: #418AD9;
 }
+
+.footer-links > ul, li, a{
+   list-style-type: none;
+  text-decoration: none;
+}
+

@@ -23,7 +23,7 @@
 
 </head>
 <body>
-	  <!-- ======= Header ======= -->
+	   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
@@ -35,10 +35,24 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto ">Products</a></li>
-          <li><a class="nav-link scrollto">Use Cases</a></li>
+          <li><a class="nav-link" href="index.html">Home</a></li>
           <li><a class="nav-link" href="about.html">About us</a></li>
-
+          <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Tune'em</a></li>
+              <li><a href="#">Royce</a></li>
+            </ul>
+          </li>
+          <!-- <li class="dropdown"><a href="#"><span>Our customers</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="case-study-reckitt.html">Reckitt</a></li>
+              <li><a href="#">Alkem</a></li>
+              <li><a href="#">Danone</a></li>
+              <li><a href="#">Conscious Food</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link" href="about.html#team">Our team</a></li>
+          
           <!-- <li><a class="nav-link scrollto " href="#clients">Clients</a></li>
           <li><a class="nav-link scrollto " href="#testimonials">Testimonials</a></li>
           <li><a class="nav-link scrollto " href="#team">Team</a></li>
@@ -60,7 +74,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="getstarted" href="contact.html">Book a Demo</a></li>
+          <li><a class="getstarted" href="contact.html">Book a demo</a></li>
           <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -73,6 +87,8 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
+          <h4 class="sent-notification"></h4>
+          
           <h2>Contact Us</h2>
           <p>Please share your details in the contact form below and our team will get back to you.</p>
         </div>
@@ -82,18 +98,9 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="contact-about">
               <h3>RSalesArm</h3>
-              <p>Follow us on LinkedIn</p>
-              <div class="social-links">
-                <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
-                <a href="https://www.linkedin.com/company/rsalesarm-it-services-private-limited/mycompany/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="info">
+              <p>Follow us on LinkedIn <a href="https://www.linkedin.com/company/rsalesarm-it-services-private-limited/mycompany/" class="linkedin"><i class="bi bi-linkedin"></i></a></p>
+              <div class="info">
+              
               <div>
                 <i class="ri-map-pin-line"></i>
                 <p>#518, Goldcrest Business Park,<br>L.B.S. Road, Ghatkopar(W),<br>Mumbai – 400086</p>
@@ -101,7 +108,8 @@
 
               <div>
                 <i class="ri-mail-send-line"></i>
-                <p>sales@rsalesarm.com</p>
+                <!-- <p></p> -->
+                <p><a href = "mailto: info@rsalesarm.com">info@rsalesarm.com</a></p>
               </div>
 
               <div>
@@ -110,27 +118,42 @@
               </div>
 
             </div>
+              
+              
+            </div>
           </div>
-
-          <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="First name" required>
+          <!-- <h4 class="sent-notification"></h4> -->
+          <div class="col-lg-8 col-md-6 align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <form id = "myForm" action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name">First name</label>
+                <input type="text" name="fname" class="form-control" id="fname" required>
               </div>
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Last name" required>
+              <div class="form-group col-md-6">
+                <label for="name">Last name</label>
+                <input type="text" name="lname" class="form-control" id="lname"  required>
               </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your work email" required>
+                
+              </div>  
+              <div class="row">
+              <div class="form-group col-md-6">
+                <label for="email">Your work email</label>
+                <input type="email" class="form-control" name="email" id="email"  required>
               </div>
-              <div class="form-group">
-                <input type="number" class="form-control" name="number" id="number" placeholder="Your work phone number" required>
+              <div class="form-group col-md-6">
+                <label for="number">Your work phone number</label>
+                <input type="number" class="form-control" name="number" id="number" required>
               </div>
-              <div class="form-group">
-                <input type="number" class="form-control" name="company_website" id="company_website" placeholder="Your company website">
+            </div>
+              <div class="row">
+              <div class="form-group col-md-6">
+                <label for="company_website">Your company website</label>
+                <input class="form-control" name="company_website" id="company_website">
               </div>
-              <div class="form-group">
-                <select class="form-control" name="country" id="country" placeholder="Your country">
+              <div class="form-group col-md-6">
+                <!-- <label for="country">Your country</label>
+                <select class="form-control" name="country" id="country">
                 	<option value="Select" style="border-color: #3498db; background-color: #F6F9FC;">Select...</option>
                 	<option value="Afganistan">Afghanistan</option>
    <option value="Albania">Albania</option>
@@ -380,7 +403,10 @@
    <option value="Zimbabwe">Zimbabwe</option>
                 </select> 
               </div>
-              <div class="form-group">
+            </div>
+              <div class="row"> -->
+              <!-- <div class="form-group col-md-6"> -->
+                <label for="name">Your company size</label>
                 <select class="form-control" name="company_size" id="company_size" placeholder="Your company size">
                 	<option value="Select">Select...</option>
                 	<option value="0-10">0-10</option>
@@ -391,37 +417,126 @@
                 </select> 
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Tell us more about your projects, needs, timeline"></textarea>
+                <label for="name">Tell us more about your projects, needs and timelines</label>
+                <textarea class="form-control" name="message" rows="5" placeholder="" id="message"></textarea>
               </div>
+            </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+             
+              <div class="text-center"><button type="submit" onclick="sendEmail()">Send Message</button></div>
+
+
             </form>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+            <script type="text/javascript">
+              
+              function sendEmail(){
+                var fname = $("#fname");
+                var lname = $("#lname");
+                var email = $("#email");
+                var number = $("#number");
+                var company_website = $("#company_website");
+                var company_size = $("#company_size");
+                var message = $("#message");
+
+                if (isNotEmpty(fname) && isNotEmpty(lname) && isNotEmpty(email) && isNotEmpty(number)) {
+                  $.ajax({
+                    url: " http://localhost:8000/Documents/Work/RSA/RSA-website/sendEmail.php",
+                    method: 'POST',
+                    dataType: 'json',
+                    data:{
+                      fname: fname.val(),
+                      lname: lname.val(),
+                      email: email.val(),
+                      number: number.val(),
+                      company_website: company_website.val(),
+                      company_size: company_size.val(),
+                      message: message.val()
+                    }, success: function(response) {
+                        $('#myForm')[0].reset();
+                        $('.sent-notification').text("Message sent successfully!");
+                        
+                    }
+                  });
+                }
+                function isNotEmpty(caller) {
+                  if (caller.val()=="") {
+                    caller.css('border','1px solid red');
+                    return false;
+                  }
+                  else{
+                    caller.css('border','');
+                    return true;
+                  }
+                }
+
+              }
+            </script>
           </div>
 
         </div>
 
       </div>
     </section><!-- End Contact Section -->
-     <!-- </main> -->
+     </main>
      <!-- End #main -->
 
-     <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="container">
-      <div class="row d-flex align-items-center">
-        <div >
-          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="#hero" class="scrollto">Home</a>
-            <a href="#about" class="scrollto">About</a>
-            <!-- <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a> -->
-          </nav>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>RSalesArm</h3>
+            <p>Follow us on LinkedIn
+            </p>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact us</a></li>
+              
+            </ul>
+            <h4>Our Products</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Tune'em</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Royce</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            
+            <h4>Our customers</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Reckitt</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Alkem</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Danone</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Conscious Food</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>About us</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a class="footer-links" href="#">Use cases</a></li>
+            </ul>
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
     </div>
   </footer><!-- End Footer -->
 
