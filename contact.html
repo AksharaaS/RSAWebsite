@@ -446,7 +446,7 @@
 
                 if (isNotEmpty(fname) && isNotEmpty(lname) && isNotEmpty(email) && isNotEmpty(number)) {
                   $.ajax({
-                    url: " http://localhost:8000/Documents/Work/RSA/RSA-website/sendEmail.php",
+                    url: "sendEmail.php",
                     method: 'POST',
                     dataType: 'json',
                     data:{
