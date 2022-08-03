@@ -26,7 +26,7 @@ if (isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['email']) &
 	$mail->Host = "smtp.gmail.com";
 	$mail->SMTPAuth = true;
 	$mail->Username = "info@rsalesarm.com";
-	$mail->Password = "Subbu12345^";
+	$mail->Password = "";
 	$mail->Port=465;
 	$mail->SMTPSecure="ssl";
 
